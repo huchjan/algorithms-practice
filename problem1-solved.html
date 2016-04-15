@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Document </title>
+</head>
+
+<body>
+    <h1> Algorithms </h1>
+    <br>
+
+    <script>
+        //Write a function which takes an array of numbers and returns the minimum of that array.
+        //[3,4,5] -> 3
+        //[2, -30] -> -30
+
+        //function minimum(arr) {
+        //    "use strict";
+        //	var minSoFar = arr[0];
+        //	for (var i = 1; i < arr.length; i++) {
+        //		if(arr[i] < minSoFar) {
+        //			minSoFar = arr[i];
+        //		}
+        //	}
+        //	return minSoFar;
+        //}
+        //
+        //console.log(minimum([3,4,5]) == 3);
+        //console.log(minimum([2, -30]) == -30);
+        //console.log(minimum([0,1,2,-3]) == -3);
+        //console.log(minimum([0]) == 0);    
+
+//        Write a function which takes an array of numbers and returns the maximum of that array.
+//        [3,4,5] -> 5
+//        [-10, 2] -> 2
+        //function maximum(arr) {
+        //    "use strict";
+        //    var maxSoFar = arr[0];
+        //    for (var i = 1; i < arr.length; i++) {
+        //        if(arr[i] > maxSoFar) {
+        //            maxSoFar = arr[i];
+        //        }
+        //    }
+        //    return maxSoFar;
+        //    }
+        //       
+        //    console.log(maximum([3,4,5]) == 5);
+        //    console.log(maximum([-10,2]) == 2);
+        //    console.log(maximum([0]) == 0);
+
+
+        
+//        Write a function which takes an array of numbers and returns the average of that array.
+//[2, 4, 6] - > 4
+//[0, 0, 0, 10] -> 2.5
+        
+        //        function average(arr) {
+        //            "use strict";
+        //            var sum = 0
+        //            for (var i = 0; i < arr.length; i++) {
+        //                sum = arr[i] + sum{
+
+        //            }
+        //            return sum / arr.length;
+        //        }
+        //
+        //        console.log(average([2, 4, 6]) == 4);
+        //        console.log(average([0, 0, 0, 10]) == 2.5);
+        //        console.log(average([0, 0, 0, 0]) == 0);
+
+        
+        
+//Write a function which takes an array of integers > 0 and returns  the first integer which does not appear in that array.
+//[1,2,5] -> 3
+//[1,2,3,4,5] -> 6
+//
+//        function missingInt(arr) {
+//
+//            for (var i = 0; i < arr.length; i++) {
+//                var currentNumber = arr[i];
+//                var nextNumber = arr[i+1];
+//                var missingNumber = currentNumber + 1;
+//                if (missingNumber != nextNumber) {      
+//                    
+//                    return (missingNumber);
+//                }
+//
+//            }
+//        }
+//            console.log(missingInt([1, 2, 5]) == 3);
+//            console.log(missingInt([1, 2, 3, 4, 5]) == 6);
+            
+            
+//    Write a function which takes an array of integers and returns an array with any duplicate integers removed.
+//[1,1,2,3,1,2,3] -> [1,2,3]
+//[1,4,4,4,2,2,4,4,4] -> [1,4,2]    
+        
+
+            function removeDupes(arr) {
+                var newArr = [];
+                for (var i = 0; i < arr.length; i++) {
+                    var lookingFor = arr[i];
+                    var foundIt = false;
+                    for (var j = 0; j < newArr.length; j++) {
+                        if (newArr[j] == lookingFor) {
+                            foundIt = true;
+                        }
+                    }
+                    if (!foundIt) {
+                        newArr[newArr.length] = lookingFor;
+                    }
+                }
+            return newArr;
+                
+                   console.log(
+            cmpArr(
+                removeDupes([1, 1, 2, 3, 1, 2, 3]) == [1, 2, 3]) == true;
+            console.log(cmpArr(removeDupes([1, 4, 4, 4, 2, 2, 4, 4, 4]) == [1, 2, 3]) == true;
+            
+            }
+            function cmpArr(arrA, arrB) {
+                "use strict";
+                if (arrA.length) != arrB.length) {
+                    return false;
+                }
+                for (var i = 0; i < arrA.length; i++) {
+                    if (arrA[i] != arrB[i]){
+                        return false;
+                    } 
+                }
+                        return true;
+                    }
+
+        
+            console.log(cmpArr([0], [0] == true);
+            console.log(cmpArr([1,2,3], [1,3,2]) == false);
+            console.log(cmpArr([], [1]) == false);
+            console.log(cmpArr([], []) == true);
+            console.log(cmpArr([0,1,2], [0,1,2]) == true);
+         
+            
+    </script>
+
+
+
+
+</body>
+
+</html>
