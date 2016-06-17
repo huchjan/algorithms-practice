@@ -97,7 +97,7 @@
 //[1,4,4,4,2,2,4,4,4] -> [1,4,2]    
         
 
-            function removeDupes(arr) {
+            (function removeDupes(arr) {
                 var newArr = [];
                 for (var i = 0; i < arr.length; i++) {
                     var lookingFor = arr[i];
@@ -113,10 +113,10 @@
                 }
             return newArr;
                 
-                   console.log(
-            cmpArr(
-                removeDupes([1, 1, 2, 3, 1, 2, 3]) == [1, 2, 3]) == true;
-            console.log(cmpArr(removeDupes([1, 4, 4, 4, 2, 2, 4, 4, 4]) == [1, 2, 3]) == true;
+//                   console.log(
+//            cmpArr(
+//                removeDupes([1, 1, 2, 3, 1, 2, 3]) == [1, 2, 3]) == true;
+//            console.log(cmpArr(removeDupes([1, 4, 4, 4, 2, 2, 4, 4, 4]) == [1, 2, 3]) == true;
             
             }
             function cmpArr(arrA, arrB) {
@@ -130,7 +130,7 @@
                     } 
                 }
                         return true;
-                    }
+                    })()
 
         
             console.log(cmpArr([0], [0] == true);
